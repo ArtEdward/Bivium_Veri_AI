@@ -1,0 +1,9 @@
+google-genai
+opencv-python
+pillow
+python-dotenv
+pyttsx3
+SpeechRecognition
+sounddevice
+scipy
+numpy
