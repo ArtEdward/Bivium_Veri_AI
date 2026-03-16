@@ -47,4 +47,4 @@ GOOGLE_API_KEY=your_actual_api_key_here
 Launch Agent Elena:
 
 Bash
-python main1.py
+python main.py
