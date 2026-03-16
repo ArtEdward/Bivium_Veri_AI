@@ -1,32 +1,27 @@
+🚀 Getting Started
 🛠 Prerequisites
-Before running Bivium Veri AI, ensure you have the following:
+Python 3.10+
 
-Python 3.10+: The core language used for the project.
+Hardware: Working webcam and microphone (required for multimodal analysis).
 
-Google AI Studio API Key: You need a valid API key from Google AI Studio.
+API Key: A valid Google AI Studio API Key (Vertex AI compatible).
 
-Note: If you are using Vertex AI, ensure the Google Cloud Project is active.
-
-Hardware: A working webcam and microphone are required for real-time multimodal analysis.
-
-Dependencies: Installation of key libraries: google-genai, opencv-python, pyttsx3, pillow, and python-dotenv.
-
-🚀 Quick Start
-1. Clone the repository:
+⚡ Quick Setup
+Clone the repo:
 
 Bash
 git clone https://github.com/EduardKremen/Bivium-Veri-AI.git
 cd Bivium-Veri-AI
-2. Install dependencies:
+Install dependencies:
 
 Bash
 pip install google-genai opencv-python pyttsx3 pillow python-dotenv
-3. Configure Environment:
-Create a .env file in the root directory and add your API key:
+Configure Environment:
+Create a .env file in the root directory:
 
-Plaintext
+Фрагмент кода
 GOOGLE_API_KEY=your_actual_api_key_here
-4. Run Agent Elena:
+Launch Agent Elena:
 
 Bash
 python main1.py
