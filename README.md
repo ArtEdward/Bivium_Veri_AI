@@ -4,7 +4,33 @@
 1. Install dependencies: `pip install opencv-python sounddevice speechrecognition pyttsx3 pillow google-genai python-dotenv`
 2. Create a `.env` file and add: `GEMINI_API_KEY=your_key_here`
 3. Run: `python main.py
- `
+
+🏗️ Bivium Veri AI: System Architecture
+🧩 Компоненти системи:
+Input Layer (Локальні сенсори):
+
+Vision: OpenCV захоплює відеопотік 720p/1080p.
+
+Audio: sounddevice моніторить рівень шуму, а SpeechRecognition перетворює твій голос на текст (STT).
+
+Processing Core (Python 3.12):
+
+Multithreading: Окремі потоки для камери, мікрофона та голосового двигуна (щоб інтерфейс не "гальмував").
+
+UI/HUD: Динамічне малювання осцилограми та статусів поверх кадру за допомогою Pillow та NumPy.
+
+Intelligence Layer (Google Cloud Platform):
+
+Gemini 2.0 Flash: Основний "мозок" профайлера.
+
+Fallback Logic: Твоя унікальна система перемикання моделей (2.5 -> 2.0 -> Lite) для забезпечення 100% аптайму під час пікових навантажень.
+
+Output Layer (Зворотний зв'язок):
+
+Voice (TTS): Двигун pyttsx3 з фіксом COMError для стабільної роботи на Windows.
+
+Visual HUD: Миттєве відображення результатів аналізу на екрані.
+`
 ## Concept:
 A multimodal AI Profiler that uses a camera and microphone to engage in "interrogation" mode. Agent Elena analyzes your responses and uses NLP to find inconsistencies.
 **Bivium Veri AI** (Latin for "The Fork of Truth") is a high-performance, real-time digital profiler built for the **Gemini Live Agent Challenge**. It leverages multimodal AI to analyze the cognitive stress and non-verbal cues involved when a human chooses between truth and deception.
