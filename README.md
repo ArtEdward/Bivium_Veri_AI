@@ -1,5 +1,12 @@
-# Bivium Veri AI 👁️⚖️
+# Bivium Veri AI - Agent Elena 👁️⚖️
 
+## How to run:
+1. Install dependencies: `pip install opencv-python sounddevice speechrecognition pyttsx3 pillow google-genai python-dotenv`
+2. Create a `.env` file and add: `GEMINI_API_KEY=your_key_here`
+3. Run: `python main1.py
+4. `
+## Concept:
+A multimodal AI Profiler that uses a camera and microphone to engage in "interrogation" mode. Agent Elena analyzes your responses and uses NLP to find inconsistencies.
 **Bivium Veri AI** (Latin for "The Fork of Truth") is a high-performance, real-time digital profiler built for the **Gemini Live Agent Challenge**. It leverages multimodal AI to analyze the cognitive stress and non-verbal cues involved when a human chooses between truth and deception.
 
 ## 🚀 Overview
