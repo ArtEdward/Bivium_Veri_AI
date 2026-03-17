@@ -2,7 +2,7 @@
 📂 Project Structure & Architecture
 To help you navigate the codebase, here is the functional breakdown of the Bivium Veri AI system:
 
-* main1.py — The Entry Point: Manages the main execution loop, threading, and global application state.
+* main.py — The Entry Point: Manages the main execution loop, threading, and global application state.
 
 * core/ — The Nervous System:
 
